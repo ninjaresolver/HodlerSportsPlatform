@@ -1,0 +1,255 @@
+.container {
+    background: black;
+    color: white;
+    border-radius: 12px;
+    padding: 12px 12px 15px;
+}
+
+.playerContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.avatarContainer {
+    position: relative;
+    border-radius: 12px;
+    background: url('../../assets/images/bg-player.png') no-repeat;
+    width: 160px;
+    height: 85px;
+}
+
+.player {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.country {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+.label {
+    color: #FFFFFF7F;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.name {
+    font-family: 'Monument', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.position {
+    color: #FFFFFF7F;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.pointContainer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: url('../../assets/images/bg-point.png') no-repeat;
+    background-size: cover;
+    border-radius: 120px;
+    padding: 16px 28px 4px;
+}
+
+.pointLabel {
+    color: #0D0D0D;
+    font-family: 'Monument', sans-serif;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+}
+
+.point {
+    font-family: 'Monument', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+.tableContainer {
+    flex: 1;
+    margin-right: 32px;
+}
+
+.activeRecord {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F9424F;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.recordContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #595959;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.recordContainer:hover {
+    background: #F9424FA0;
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.recordText {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.recordValue {
+    font-family: 'Monument', sans-serif;
+    font-weight: 800;
+    line-height: 20px;
+}
+
+.arrowContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chartContainer {
+    background: #252525;
+    border-radius: 10px;
+    margin-left: 16px;
+    padding: 20px 20px 25px;
+    width: 550px;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.chartTitle {
+    font-family: 'Monument', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1280px) {
+    .chartContainer {
+        width: 400px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .point {
+        font-size: 60px;
+    }
+
+    .chartTitle {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .chartContainer {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .name {
+        font-size: 18px;
+    }
+
+    .pointLabel {
+        font-size: 14px;
+    }
+
+    .point {
+        font-size: 54px;
+    }
+
+    .chartContainer {
+        width: 370px;
+    }
+
+    .chartTitle {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .playerContainer {
+        align-items: center;
+    }
+
+    .avatarContainer {
+        display: none;
+    }
+
+    .pointContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 120px;
+        height: 120px;
+    }
+
+    .point {
+        font-size: 36px;
+        line-height: 1;
+    }
+
+    .pointLabel {
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .tableContainer {
+        margin-right: 0;
+    }
+
+    .chartContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pointContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+    }
+
+    .point {
+        font-size: 32px;
+    }
+
+    .pointLabel {
+        font-size: 10px;
+    }
+
+    .chartContainer img {
+        max-width: 250px;
+    }
+}

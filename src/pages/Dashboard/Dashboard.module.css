@@ -1,0 +1,14 @@
+.container {
+    min-height: 100vh;
+    padding: 24px;
+}
+
+.rightPanel {
+    width: 500px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,62 @@
+.balanceContainer {
+    background: black;
+    border-radius: 12px;
+    color: white;
+    padding: 16px;
+}
+
+.playerContainer {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.playerName {
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.playerAddress {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.balanceLabel {
+    color: #FEFEFE7F;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.balanceAmount {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+.balanceItemWrapper {
+    display: flex;
+    align-items: center;
+    background: #1E1E1E;
+    padding: 8px;
+}
+
+.balanceText {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.balanceSubtext {
+    color: #FEFEFE7F;
+    font-size: 12px;
+    line-height: 16px;
+}

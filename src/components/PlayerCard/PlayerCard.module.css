@@ -1,0 +1,124 @@
+.container {
+    background: black;
+    color: white;
+    border-radius: 12px;
+    padding: 25px 0;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 16px;
+}
+
+.title {
+    font-family: Monument, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.arrow {
+    height: 50px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.button:hover {
+    background: #0D0D0D;
+}
+
+.button:hover img {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.cardWrapper {
+    position: relative;
+    background: #1E1E1E;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 330px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.cardIcon {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+.cardBackground {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.cardMark {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cardTitle {
+    font-family: 'Monument', sans-serif;
+    letter-spacing: 0.05rem;
+    line-height: 24px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .arrow {
+        height: 40px;
+    }
+
+    .cardTitle {
+        font-size: 14px;
+    }
+
+    .cardMark {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .cardWrapper {
+        height: 280px;
+    }
+
+    .cardMark {
+        width: 120px;
+        height: 120px;
+    }
+
+    .arrowContainer {
+        display: none;
+    }
+}

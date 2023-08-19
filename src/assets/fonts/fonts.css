@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Monument';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Monument'), url('./monument/MonumentExtended-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Monument';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Monument'), url('./monument/MonumentExtended-Ultrabold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    font-weight: normal;
+    font-style: normal;
+    src: local('Brutal Type'), local('BrutalType'),
+    url('./brutal/BrutalType.eot'),
+    url('./brutal/BrutalType.eot?#iefix') format('embedded-opentype'),
+    url('./brutal/BrutalType.woff2') format('woff2'),
+    url('./brutal/BrutalType.woff') format('woff'),
+    url('./brutal/BrutalType.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Brutal Type'), local('BrutalType'),
+    url('./brutal/BrutalType-Medium.eot'),
+    url('./brutal/BrutalType-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./brutal/BrutalType-Medium.woff2') format('woff2'),
+    url('./brutal/BrutalType-Medium.woff') format('woff'),
+    url('./brutal/BrutalType-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    font-weight: bold;
+    font-style: normal;
+    src: local('Brutal Type'), local('BrutalType'),
+    url('./brutal/BrutalType-Bold.eot'),
+    url('./brutal/BrutalType-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./brutal/BrutalType-Bold.woff2') format('woff2'),
+    url('./brutal/BrutalType-Bold.woff') format('woff'),
+    url('./brutal/BrutalType-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Druk Trial';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Druk Trial'), local('DrukTrial'),
+    url('./druk/Druk-Medium-Trial.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Druk Trial';
+    font-weight: 900;
+    font-style: normal;
+    src: local('Druk Trial'), local('DrukTrial'),
+    url('./druk/Druk-Super-Trial.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Sunset Gothic';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Sunset Gothic'), local('SunsetGothic'),
+    url('./sunset/sunsetgothic-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neue Grotesk Display';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Neue Grotest Display'), local('NeueGrotestDisplay'),
+    url('./neue/NeueHaasDisplayLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neue Grotesk Display';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Neue Grotest Display'), local('NeueGrotestDisplay'),
+    url('./neue/NeueHaasDisplayMedium.ttf') format('truetype');
+}

@@ -1,0 +1,28 @@
+.primaryContainer {
+    display: inline-flex;
+    border-radius: 90px;
+    background: #F9424F;
+    color: white;
+    cursor: pointer;
+    padding: 12px 24px;
+    user-select: none;
+}
+
+.primaryContainer:hover {
+    background: linear-gradient(102deg, #F94139 12.5%, #F944A8 98.7%);
+}
+
+.secondaryContainer {
+    color: #FFFFFF7F;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.buttonText {
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+

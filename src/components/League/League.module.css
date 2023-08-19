@@ -1,0 +1,126 @@
+.container {
+    position: relative;
+    height: 644px;
+    background: url('../../assets/images/homepage-1.png') no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
+.contentHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0px;
+    gap: 3px;
+    height: 111px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.32);
+    border-radius: 10px;
+    
+}
+.contentBody {
+    padding: 0px;
+    height: 340px;
+    margin-top: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.32);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.title {
+    font-family: 'Monument', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.currentName {
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.tableContainer {
+    overflow-y: auto;
+    height: 345px;
+    user-select: none;
+}
+
+.tableContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+    background: #AAA;
+}
+
+.itemWrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #595959;
+    gap: 14px;
+    padding: 12px 14px;
+}
+
+.standing {
+    font-family: 'Sunset Gothic', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.club {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 364px;
+    }
+    .content {
+        width: 242px;
+    }
+    .contentHeader {
+        flex-direction: column;
+        align-items: center;
+        padding: 8.29954px 0px;
+        gap: 2.07px;
+        height: 78px;
+    }
+    .contentHeader .title {
+        font-size: 11.0661px;
+        line-height: 22px;
+    }
+    .contentHeader .currentName {
+        font-size: 11.0661px;
+        line-height: 22px;
+        /* identical to box height, or 200% */
+
+        text-transform: uppercase;
+    }
+    .contentBody {
+        height: 235px;
+    }
+    .tableContainer {
+        overflow-y: auto;
+        height: 235px;
+        user-select: none;
+    } 
+}

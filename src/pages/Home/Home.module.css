@@ -1,0 +1,815 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #0F0F0F;
+}
+
+
+.discoverContainer {
+    position: relative;
+    width: 100%;
+    height: 847px;
+    background: url('../../assets/images/discover-back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+.inputBoxContainer {
+    position: absolute; 
+    top: 25px;
+    padding: 0 40px;
+    width: 100%;
+}
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background: #fff;
+    border-radius: 50px;
+}
+.inputSearch {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding-left: 0;
+    flex-grow: 1;
+    font-size: 22px;
+}
+.toggleMenuBtn {
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btnConnectWallet {
+    background: transparent;
+    outline: none;
+    border: 1px solid #0F0F0F;
+    padding: 7px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btnConnectWallet:hover {
+    background: #DDD;
+}
+.discoverLeftContainer {
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    padding: 0 44px;
+}
+
+.discoverTitle {
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    /* or 100% */
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.discoverDescription {
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+    color: #FFF;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    /* identical to box height, or 150% */
+}
+.discoverBtnContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-start;
+    align-items: center;
+    gap: 20px
+}
+.btnSignup {
+    background: #F9424F;
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 90px;
+    cursor: pointer;
+    width: 101px;
+    color: #FFF;
+    font-weight: 600;
+    white-space: nowrap;
+    height: 48px;
+}
+.btnSignup:hover {
+    background: #d32f39;
+}
+.btnWallect {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #FFF;
+    border: 1px solid #FFF;
+    white-space: nowrap;
+    font-weight: 800;
+}
+.btnWallect:hover {
+    background: #DDD;
+}
+.trackContainer {
+    position: relative;
+    width: 100%;
+    height: 847px;
+    background: #FFF;
+    border-radius: 15px;
+    z-index: 1;
+    overflow: hidden;
+}
+.trackContentContainer {
+    padding: 0 40px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+.imagePlanet {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 263px;
+    transform: translate(-60%, -60%);
+    z-index: -1;
+}
+.trackContentContainer .leftContent {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.leftContent .trackTitle {
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.02em;
+    color: #0F0F0F;
+}
+.leftContent .bottomContainer {
+    margin-top: auto;
+    align-self: flex-end;
+    position: relative;
+}
+.bottomContainer .trackArrow {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    width: 100px;
+    height: 110px;
+}
+.bottomContainer .description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    color: #0F0F0F;
+}
+
+.trackContentContainer .rightContent {
+    width: 50%;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.cardGamPlayed {
+    width: 50%;
+    height: 213px;
+    border-radius: 20px;
+    position: relative;
+    background: #F4F4F4;
+    font-family: 'Neue Grotesk Display', sans-serif;
+}
+
+.cardTitle {
+    position: absolute;
+    width: 80%;
+    line-height: 56px;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    color: #0F0F0F;
+    top: 22px;
+    left: 19px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cardNum {
+    position: absolute;
+    font-style: normal;
+    top: 80px;
+    left: 48px;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    /* identical to box height, or 100% */
+    text-transform: uppercase;
+    color: #0F0F0F;
+}
+.cardFantasy {
+    width: 50%;
+    height: 213px;
+    border-radius: 20px;
+    position: relative;
+    background: #F9424F;
+    font-family: 'Neue Grotesk Display', sans-serif;
+}
+.cardDistance {
+    width: 50%;
+    height: 213px;
+    border-radius: 20px;
+    position: relative;
+    background: #F4F4F4;
+    font-family: 'Neue Grotesk Display', sans-serif;
+}
+.cardDistance .imageChart {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cardPerformance {
+    width: 50%;
+    height: 213px;
+    border-radius: 20px;
+    position: relative;
+    background: #F4F4F4;
+    font-family: 'Neue Grotesk Display', sans-serif;
+}
+.cardPerformance .imagePerformance {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.videoWrapper {
+    width: 100%;
+    height: 847px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 15px;
+    /* transform: scale(1.1); */
+    position: relative;
+    /* background: url('../../assets/images/homepage-horizontal.png') no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.videoWrapper .videoContent {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.5);
+}
+.videoWrapper .videoContentContainer {
+    position: absolute;
+    width: 40%;
+    left: 57px;
+    bottom: 113px;
+    overflow: hidden;
+}
+.videoContentContainer .videoContentTitle {
+    letter-spacing: -0.02rem;
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;color: #FFFFFF;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6)
+}
+.videoContentContainer .videoContentDescription {
+    margin-top: 20px;
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    color: #FFFFFF;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.background {
+    height: 100%;
+    object-fit: cover;
+}
+
+.connectButton {
+    position: absolute;
+    top: 24px;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    border-radius: 20px;
+    padding: 16px 24px;
+    cursor: pointer;
+}
+
+.connectButtonText {
+    color: black;
+    font-family: 'Monument', sans-serif;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.01rem;
+    text-transform: uppercase;
+}
+
+.bannerWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    color: black;
+    font-family: 'Monument', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 0.01rem;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+
+.accountButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #F9424F;
+    border-radius: 20px;
+    padding: 16px 24px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.accountButton:hover {
+    background: #d32f39;
+}
+
+.accountButtonText {
+    color: white;
+    font-family: 'Monument', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.01rem;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.loadingText {
+    color: red;
+    margin-top: 10px;
+}
+
+.leagueContainer {
+    position: relative;
+    background: white;
+    padding: 100px 40px;  
+    border-radius: 15px;                                                                 
+}
+
+.leagueWrapper {
+    background: url("../../assets/images/homepage-1.png") no-repeat center;
+    background-size: cover;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.planet {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+}
+
+.leagueContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.leagueSectionTitle {
+    color: #0F0F0F;
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.leagueArrow {
+    width: 60px;
+}
+
+.leagueSectionText {
+    color: #0F0F0F;
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-weight: 300;
+}
+
+.cardSplash {
+    background-image: url("../../assets/images/splash.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.cardSectionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 60px 40px;
+}
+
+.cardSectionTitle {
+    color: white;
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.sticker {
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+.cardSectionText {
+    color: white;
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-weight: 300;
+}
+
+.playerCard {
+
+}
+
+.connectSection {
+    position: relative;
+    height: 500px;
+    background-image: url("../../assets/images/connect.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.connectOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.connectTitle {
+    color: #0F0F0F;
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.connectDescription {
+    color: #0F0F0F;
+    font-family: 'Neue Grotesk Display', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    width: 40%;
+}
+
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 56px;
+    }
+   
+}
+
+
+@media (max-width: 767px) {
+    .background {
+        max-width: 100%;
+    }
+    
+    .discoverContainer {
+        background: url('../../assets/images/background-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .inputBoxContainer {
+        top: 5px;
+        padding: 0 10px;
+    }
+    .inputBox {
+        border-radius: 10px;
+        padding: 32px 12px;
+    }
+    .toggleMenuBtn {
+        display: block;
+    }
+    .btnConnectWallet {
+        display: none;
+    }
+    .discoverLeftContainer {
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        padding: 0 20px;
+    }
+    
+    .discoverTitle {
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 52px;
+        /* or 100% */
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .discoverDescription {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.01rem;
+        font-weight: 100;
+    }
+    .trackContainer {
+        height: 718px;
+    }
+    .trackContentContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 60px;
+        padding-bottom: 67px;
+    }
+    .trackContentContainer .leftContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .leftContent .trackTitle {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .trackContainer .imagePlanet {
+        display: none;
+    }
+    .bottomContainer .trackArrow {
+        display: none;
+    }
+    .bottomContainer .description {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+        color: #0F0F0F;
+    }
+    .trackContainer {
+        display: flex;
+    }
+    .trackContentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .trackContentContainer .leftContent, 
+    .trackContentContainer .rightContent {
+        width: 100%;
+    }
+    
+    .cardGamPlayed {
+        display: none;
+    }
+    .cardFantasy {
+        display: none;
+    }
+    .cardDistance {
+        width: 100%;
+    }
+    .cardDistance .imageChart {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cardPerformance {
+        display: none;
+    }
+    
+    .videoWrapper {
+
+    }
+
+    .videoWrapper .videoContentContainer {
+        position: absolute;
+        width: 100%;
+        padding: 0 26px;
+        bottom: 108px;
+        left: 0;
+    }
+    .videoContentContainer .videoContentTitle {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+    }
+    
+
+    .bannerWrapper {
+        width: 330px;
+    }
+
+    .title {
+        font-family: "Druk Trial", sans-serif;
+        font-size: 48px;
+        font-weight: 900;
+        margin-top: 30px;
+    }
+
+    .connectButton {
+        position: static;
+        margin: 20px auto 0;
+        background: #F9424F;
+    }
+
+    .connectButton:hover {
+        background: #d32f39;
+    }
+
+    .connectButtonText {
+        color: white;
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .planet {
+        display: none;
+    }
+    .leagueArrow {
+        display: none;
+    }
+
+    .leagueContainer {
+        padding: 40px 20px;
+    }
+
+    .leagueSectionTitle {
+        font-size: 40px;
+        line-height: 40px;
+        /* or 100% */
+        letter-spacing: -0.02em;
+    }
+    
+    .cardSplash {
+        height: 564px;
+    }
+    .cardSectionContent {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+    }
+    .cardSectionTitle {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .playerCard {
+        order: 0;
+    }
+    .cardSectionText {
+        order: 1;
+    }
+    .sticker {
+        width: 50px;
+        height: 50px;
+        transform: rotate(-15deg);
+    }
+    .connectSection {
+        height: 400px;
+    }
+    .connectTitle {
+        font-size: 48px;
+        line-height: 56px;
+        /* identical to box height, or 117% */
+
+        letter-spacing: -0.02em;
+    }
+    .connectDescription {
+        width: 310px;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 665px) {
+    .bannerWrapper {
+        width: 290px;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 550px) {
+    .bannerWrapper {
+        width: 225px;
+    }
+    .title {
+        font-size: 38px;
+        line-height: 56px;
+        margin-top: 25px;
+    }
+
+    .connectButton {
+        padding: 12px 16px;
+    }
+
+    .connectButtonText {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 430px) {
+    .bannerWrapper {
+        width: 180px;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 20px;
+    }
+
+    .connectButton {
+        padding: 8px 12px;
+    }
+
+    .connectButtonText {
+        font-size: 10px;
+    }
+}

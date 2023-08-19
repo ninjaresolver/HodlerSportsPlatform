@@ -1,0 +1,50 @@
+.container {
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 16px 0;
+    background-image: url('../../assets/images/effect.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.title {
+    font-family: 'Monument', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+    line-height: 24px;
+    margin: 24px;
+    text-transform: uppercase;
+}
+
+.currentName {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.prevButton {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    z-index: 10;
+}
+
+.nextButton {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 991px) {
+    .title {
+        font-size: 20px;
+    }
+}
